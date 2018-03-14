@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<title>InsuranceTestSuite</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test1</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:53807/<datalist><option>http://localhost:53807/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=Female<datalist><option>id=Female</option><option>//input[@id='Female']</option><option>//fieldset[@id='gender']/input[2]</option><option>//input[2]</option><option>css=#Female</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='body']/section[2]/form/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyValue</td><td>id=Female<datalist><option>id=Female</option><option>//input[@id='Female']</option><option>//fieldset[@id='gender']/input[2]</option><option>//input[2]</option><option>css=#Female</option></datalist></td><td>on</td>
+</tr>
+<tr><td>assertValue</td><td>id=Female<datalist><option>id=Female</option><option>//input[@id='Female']</option><option>//fieldset[@id='gender']/input[2]</option><option>//input[2]</option><option>css=#Female</option></datalist></td><td>on</td>
+</tr>
+<tr><td>verifyValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>15</td>
+</tr>
+<tr><td>assertValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>15</td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=body<datalist><option>id=body</option><option>//div[@id='body']</option><option>//body/div</option><option>css=#body</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>doubleClick</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 0</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 0</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 2</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:53807/<datalist><option>http://localhost:53807/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=Male<datalist><option>id=Male</option><option>name=gender</option><option>//input[@id='Male']</option><option>//fieldset[@id='gender']/input</option><option>//input</option><option>css=#Male</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>24</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='body']/section[2]/form/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyValue</td><td>id=Male<datalist><option>id=Male</option><option>name=gender</option><option>//input[@id='Male']</option><option>//fieldset[@id='gender']/input</option><option>//input</option><option>css=#Male</option></datalist></td><td>on</td>
+</tr>
+<tr><td>assertValue</td><td>id=Male<datalist><option>id=Male</option><option>name=gender</option><option>//input[@id='Male']</option><option>//fieldset[@id='gender']/input</option><option>//input</option><option>css=#Male</option></datalist></td><td>on</td>
+</tr>
+<tr><td>verifyValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>24</td>
+</tr>
+<tr><td>assertValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>24</td>
+</tr>
+<tr><td>click</td><td>id=body<datalist><option>id=body</option><option>//div[@id='body']</option><option>//body/div</option><option>css=#body</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 6</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 6</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 3</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:53807/<datalist><option>http://localhost:53807/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=Female<datalist><option>id=Female</option><option>//input[@id='Female']</option><option>//fieldset[@id='gender']/input[2]</option><option>//input[2]</option><option>css=#Female</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>35</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='body']/section[2]/form/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyValue</td><td>id=Female<datalist><option>id=Female</option><option>//input[@id='Female']</option><option>//fieldset[@id='gender']/input[2]</option><option>//input[2]</option><option>css=#Female</option></datalist></td><td>on</td>
+</tr>
+<tr><td>verifyValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>35</td>
+</tr>
+<tr><td>assertValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>35</td>
+</tr>
+<tr><td>click</td><td>id=body<datalist><option>id=body</option><option>//div[@id='body']</option><option>//body/div</option><option>css=#body</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 2.5</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 2.5</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 4</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:53807/<datalist><option>http://localhost:53807/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=Male<datalist><option>id=Male</option><option>name=gender</option><option>//input[@id='Male']</option><option>//fieldset[@id='gender']/input</option><option>//input</option><option>css=#Male</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>52</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='body']/section[2]/form/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=body<datalist><option>id=body</option><option>//div[@id='body']</option><option>//body/div</option><option>css=#body</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyValue</td><td>id=Male<datalist><option>id=Male</option><option>name=gender</option><option>//input[@id='Male']</option><option>//fieldset[@id='gender']/input</option><option>//input</option><option>css=#Male</option></datalist></td><td>on</td>
+</tr>
+<tr><td>assertValue</td><td>id=Male<datalist><option>id=Male</option><option>name=gender</option><option>//input[@id='Male']</option><option>//fieldset[@id='gender']/input</option><option>//input</option><option>css=#Male</option></datalist></td><td>on</td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]<datalist><option>//div[@id='body']/section[2]</option><option>//section[2]</option><option>css=section.content-wrapper.main-content.clear-fix</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td></td>
+</tr>
+<tr><td>doubleClick</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td></td>
+</tr>
+<tr><td>assertValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>52</td>
+</tr>
+<tr><td>click</td><td>id=body<datalist><option>id=body</option><option>//div[@id='body']</option><option>//body/div</option><option>css=#body</option></datalist></td><td></td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 0.75</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 5</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:53807/<datalist><option>http://localhost:53807/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=Female<datalist><option>id=Female</option><option>//input[@id='Female']</option><option>//fieldset[@id='gender']/input[2]</option><option>//input[2]</option><option>css=#Female</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>59</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='body']/section[2]/form/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=body<datalist><option>id=body</option><option>//div[@id='body']</option><option>//body/div</option><option>css=#body</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=body<datalist><option>id=body</option><option>//div[@id='body']</option><option>//body/div</option><option>css=#body</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyValue</td><td>id=Female<datalist><option>id=Female</option><option>//input[@id='Female']</option><option>//fieldset[@id='gender']/input[2]</option><option>//input[2]</option><option>css=#Female</option></datalist></td><td>on</td>
+</tr>
+<tr><td>assertValue</td><td>id=Female<datalist><option>id=Female</option><option>//input[@id='Female']</option><option>//fieldset[@id='gender']/input[2]</option><option>//input[2]</option><option>css=#Female</option></datalist></td><td>on</td>
+</tr>
+<tr><td>verifyValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>59</td>
+</tr>
+<tr><td>assertValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>59</td>
+</tr>
+<tr><td>click</td><td>id=body<datalist><option>id=body</option><option>//div[@id='body']</option><option>//body/div</option><option>css=#body</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 0.375</td>
+</tr>
+<tr><td>assertText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 0.375</td>
+</tr>
+</tbody></table>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">Test 6</td></tr>
+</thead>
+<tbody>
+<tr><td>open</td><td>http://localhost:53807/<datalist><option>http://localhost:53807/</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>id=Other<datalist><option>id=Other</option><option>//input[@id='Other']</option><option>//fieldset[@id='gender']/input[3]</option><option>//input[3]</option><option>css=#Other</option></datalist></td><td></td>
+</tr>
+<tr><td>type</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>69</td>
+</tr>
+<tr><td>click</td><td>//button[@type='submit']<datalist><option>//button[@type='submit']</option><option>//div[@id='body']/section[2]/form/button</option><option>//button</option><option>css=button[type="submit"]</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyValue</td><td>id=Other<datalist><option>id=Other</option><option>//input[@id='Other']</option><option>//fieldset[@id='gender']/input[3]</option><option>//input[3]</option><option>css=#Other</option></datalist></td><td>on</td>
+</tr>
+<tr><td>assertValue</td><td>id=Other<datalist><option>id=Other</option><option>//input[@id='Other']</option><option>//fieldset[@id='gender']/input[3]</option><option>//input[3]</option><option>css=#Other</option></datalist></td><td>on</td>
+</tr>
+<tr><td>click</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td></td>
+</tr>
+<tr><td>doubleClick</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>69</td>
+</tr>
+<tr><td>assertValue</td><td>name=age<datalist><option>name=age</option><option>//input[@id='age']</option><option>//fieldset[@id='age']/input</option><option>//fieldset[2]/input</option><option>css=#age &gt; #age</option></datalist></td><td>69</td>
+</tr>
+<tr><td>click</td><td>id=body<datalist><option>id=body</option><option>//div[@id='body']</option><option>//body/div</option><option>css=#body</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 0</td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td></td>
+</tr>
+<tr><td>doubleClick</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td></td>
+</tr>
+<tr><td>click</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td></td>
+</tr>
+<tr><td>verifyText</td><td>//div[@id='body']/section[2]/b<datalist><option>//div[@id='body']/section[2]/b</option><option>//b</option><option>css=b</option></datalist></td><td>Your Premium is 0</td>
+</tr>
+</tbody></table>
+</body>
+</html>

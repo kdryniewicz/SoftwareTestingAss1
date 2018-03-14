@@ -1,4 +1,5 @@
-﻿using System;
+﻿using fit;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -36,6 +37,20 @@ namespace Calculator
                 premium = premium * 0.15f;
             return premium;
         }
+
+    }
+
+   public class MyFixture : ColumnFixture
+    {
+
+        public int age;
+        public string gender;
+
+        public Calc c1 = new Calc();
+
+        public float calcPremium()
+        { return c1.CalcPremium(age, gender); }
+
 
     }
 }

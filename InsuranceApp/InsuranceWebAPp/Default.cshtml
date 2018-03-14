@@ -1,0 +1,102 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Home Page";
+
+    string gender = "";
+    string age = "";
+    float Premium = 0;
+    string PremiumMsg = "";
+
+    if(IsPost)
+    {
+        Session["gender"] = Request.Form["gender"];
+        Session["age"] = Request.Form["age"];
+
+    }
+    if (IsPost & Session["gender"] != null & Session["age"] != null)
+    {
+        gender = (string)Session["gender"];
+        age = (string)Session["age"];
+
+        Premium = CalcPremium(Convert.ToInt32(age), gender);
+        PremiumMsg = string.Format("Your Premium is {0}", Premium);
+    }
+
+    float CalcPremium(int Age, string Gender)
+    {
+        float premium;
+
+        if (Gender == "Female")
+            if ((Age >= 18) && (Age <= 30))
+                premium = 5.0f;
+            else
+            if (Age >= 31)
+                premium = 2.50f;
+            else
+                premium = 0.0f;
+        else
+        if (Gender == "Male")
+            if ((Age >= 18) && (Age <= 35))
+                premium = 6.0f;
+            else
+               if (Age >= 36)
+                premium = 5.0f;
+            else
+                premium = 0.0f;
+        else
+            premium = 0.0f;
+
+        if (Age >= 50)
+            premium = premium * 0.15f;
+        return premium;
+    }
+}
+
+@section featured {
+<section class="featured">
+    <div class="content-wrapper">
+        <hgroup class="title">
+            <h1>@Page.Title.</h1>
+        </hgroup>
+        <p>
+          
+        </p>
+    </div>
+</section>
+}
+
+<html>
+<head>
+    <title>Insurance Calculator</title>
+</head>
+<body>
+    <h1 style="font-size:24px; align-content:center;">Premium Calculator</h1>
+    <form method="post">
+        <fieldset id="gender">
+            <legend> Gender: </legend>
+            <label for="Male">Male</label>
+            <input type="radio" name="gender" id="Male" value="Male" @((string)Session["gender"] == "Male" ? "checked" : "") />
+            <label for="Female">Female</label>
+            <input type="radio" name="gender" id="Female" value="Female" @((string)Session["gender"] == "Female" ? "checked" : "") />
+            <label for="Other">Other</label>
+            <input type="radio" name="gender" id="Other" value="Other" @((string)Session["gender"] == "Other" ? "checked" : "") />
+        </fieldset>
+        <fieldset id="age">
+            <legend>Age Input</legend>
+            <label for="age">Age: </label>
+            <input id="age" name="age" type="number" value="@Session["age"]" />
+        </fieldset>
+        <button type="submit">Submit Data</button>
+    </form>
+
+
+    @{ 
+        if(IsPost & !string.IsNullOrEmpty(PremiumMsg))
+        {
+            <b>@PremiumMsg</b>
+        }
+    }
+</body>
+</html>
+
+
